@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container-fluid">
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="https://psinps.in/assets/images/plogo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="new.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#courses">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal"
+                                data-bs-target="#contactModal">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-success" type="submit">+91-9415327400</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+        <!-- Contact Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <!-- form -->
+            <div class="modal-dialog">
+                <div class="form-holder ">
+                    <div class="form-content">
+                        <div class="form-items">
+                            <h3>Register Today</h3>
+                            <p>Fill in the data below.</p>
+                            <form class="requires-validation" novalidate="">
+
+                                <div class="col-md-12">
+                                    <input class="form-control" type="text" name="name" placeholder="Full Name"
+                                        required="">
+                                    <div class="valid-feedback">Username field is valid!</div>
+                                    <div class="invalid-feedback">Username field cannot be blank!</div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input class="form-control" type="email" name="email" placeholder="E-mail Address"
+                                        required="">
+                                    <div class="valid-feedback">Email field is valid!</div>
+                                    <div class="invalid-feedback">Email field cannot be blank!</div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <select class="form-select mt-3" required="">
+                                        <option selected="" disabled="" value="">Position</option>
+                                        <option value="jweb">Junior Web Developer</option>
+                                        <option value="sweb">Senior Web Developer</option>
+                                        <option value="pmanager">Project Manager</option>
+                                    </select>
+                                    <div class="valid-feedback">You selected a position!</div>
+                                    <div class="invalid-feedback">Please select a position!</div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input class="form-control" type="password" name="password" placeholder="Password"
+                                        required="">
+                                    <div class="valid-feedback">Password field is valid!</div>
+                                    <div class="invalid-feedback">Password field cannot be blank!</div>
+                                </div>
+
+                                <div class="col-md-12 mt-3">
+                                    <label class="mb-3 mr-1" for="gender">Gender: </label>
+
+                                    <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off"
+                                        required="">
+                                    <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
+
+                                    <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off"
+                                        required="">
+                                    <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
+
+                                    <input type="radio" class="btn-check" name="gender" id="secret" autocomplete="off"
+                                        required="">
+                                    <label class="btn btn-sm btn-outline-secondary" for="secret">Secret</label>
+                                    <div class="valid-feedback mv-up">You selected a gender!</div>
+                                    <div class="invalid-feedback mv-up">Please select a gender!</div>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                        required="">
+                                    <label class="form-check-label">I confirm that all data are
+                                        correct</label>
+                                    <div class="invalid-feedback">Please confirm that the entered data
+                                        are all correct!</div>
+                                </div>
+
+                                <div class="form-button mt-3">
+                                    <button id="submit" type="submit" class="btn btn-primary">Register</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- container -->
+        <div class="container heading">
+            <div class="row align-items-center gap-5">
+                <div class="col-lg-6 intro my-1 py-4 ms-2">
+                    <div class="banner-content banner-content-two">
+                        <h1>Welcome To Prateek Singh Institute Of Nursing &amp; Paramedical Sciences</h1>
+                        <p>Committed to excellence in Nursing and Paramedical education, fostering future healthcare
+                            professionals.</p>
+                        <ul>
+                            <li>
+                                <a href="#courses" class="default-btn-one">
+                                    <i class="flaticon-bookmark"></i>Explore Courses
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="default-btn-two">
+                                    <i class="flaticon-speech-bubble"></i>Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 form mb-2" id="contactModal">
+                    <div class="input-box-warp">
+                        <!-- Form -->
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="form-holder">
+                                    <div class="form-content">
+                                        <div class="form-items">
+                                            <h3>Register Today</h3>
+                                            <p>Fill in the data below.</p>
+                                            <form class="requires-validation" novalidate="">
+
+                                                <div class="col-md-12">
+                                                    <input class="form-control" type="text" name="name"
+                                                        placeholder="Full Name" required="">
+                                                    <div class="valid-feedback">Username field is valid!</div>
+                                                    <div class="invalid-feedback">Username field cannot be blank!</div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <input class="form-control" type="email" name="email"
+                                                        placeholder="E-mail Address" required="">
+                                                    <div class="valid-feedback">Email field is valid!</div>
+                                                    <div class="invalid-feedback">Email field cannot be blank!</div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <select class="form-select mt-3" required="">
+                                                        <option selected="" disabled="" value="">Position</option>
+                                                        <option value="jweb">Junior Web Developer</option>
+                                                        <option value="sweb">Senior Web Developer</option>
+                                                        <option value="pmanager">Project Manager</option>
+                                                    </select>
+                                                    <div class="valid-feedback">You selected a position!</div>
+                                                    <div class="invalid-feedback">Please select a position!</div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <input class="form-control" type="password" name="password"
+                                                        placeholder="Password" required="">
+                                                    <div class="valid-feedback">Password field is valid!</div>
+                                                    <div class="invalid-feedback">Password field cannot be blank!</div>
+                                                </div>
+
+                                                <div class="col-md-12 mt-3">
+                                                    <label class="mb-3 mr-1" for="gender">Gender: </label>
+
+                                                    <input type="radio" class="btn-check" name="gender" id="male"
+                                                        autocomplete="off" required="">
+                                                    <label class="btn btn-sm btn-outline-secondary"
+                                                        for="male">Male</label>
+
+                                                    <input type="radio" class="btn-check" name="gender" id="female"
+                                                        autocomplete="off" required="">
+                                                    <label class="btn btn-sm btn-outline-secondary"
+                                                        for="female">Female</label>
+
+                                                    <input type="radio" class="btn-check" name="gender" id="secret"
+                                                        autocomplete="off" required="">
+                                                    <label class="btn btn-sm btn-outline-secondary"
+                                                        for="secret">Secret</label>
+                                                    <div class="valid-feedback mv-up">You selected a gender!</div>
+                                                    <div class="invalid-feedback mv-up">Please select a gender!</div>
+                                                </div>
+
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="invalidCheck" required="">
+                                                    <label class="form-check-label">I confirm that all data are
+                                                        correct</label>
+                                                    <div class="invalid-feedback">Please confirm that the entered data
+                                                        are all correct!</div>
+                                                </div>
+
+                                                <div class="form-button mt-3">
+                                                    <button id="submit" type="submit"
+                                                        class="btn btn-primary">Register</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- container end -->
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="https://psinps.in/assets/images/banners/banner-3.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://psinps.in/assets/images/prat/build.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item active">
+                    <img src="https://psinps.in/assets/images/courses/xray.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about section -->
+    <section class="py-5 mt-5 aboutsec">
+        <div class="container" id="about">
+            <div class="row gx-4 align-items-center justify-content-between">
+                <div class="col-md-5 order-2 order-md-1 col-12">
+                    <div class="mt-5 mt-md-0">
+                        <span class="text-muted">Our Story</span>
+                        <h2 class="display-5 fw-bold">About Us</h2>
+                        <h2>Empowering Your Future with <br> Quality Education</h2>
+                        <p class="lead">We are committed to providing high-quality education and training that equips
+                            our students with the skills and knowledge they need to succeed in their careers. Our
+                            programs are designed to meet the demands of the modern workforce, ensuring that our
+                            graduates are well-prepared to excel in their chosen fields.</p>
+                        <ul>
+                            <li>Experienced and dedicated faculty</li>
+                            <li>State-of-the-art facilities</li>
+                            <li>Comprehensive curriculum</li>
+                            <li>Strong industry connections</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 offset-md-1 order-1 order-md-2 col-12">
+                    <div class="row gx-2 gx-lg-3">
+                        <div class="col-6">
+                            <div class="mb-2"><img class="img-fluid rounded-3"
+                                    src="https://cdn.pixabay.com/photo/2017/10/04/09/56/laboratory-2815641_1280.jpg">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-2"><img class="img-fluid rounded-3"
+                                    src="https://cdn.pixabay.com/photo/2018/08/02/07/50/medical-procedures-3579029_1280.jpg">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-2"><img class="img-fluid rounded-3"
+                                    src="https://cdn.pixabay.com/photo/2016/11/30/08/47/the-sanctum-sanctorum-1872194_960_720.jpg">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-2"><img class="img-fluid rounded-3"
+                                    src="https://cdn.pixabay.com/photo/2016/11/06/10/35/hospital-1802679_1280.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- topper section -->
+    <section id="service" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-5">Topper</h2>
+
+            <!-- Carousel -->
+            <div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4 ">
+                                <div class="card service-card">
+                                    <img src="https://cdn.pixabay.com/photo/2016/11/23/17/18/bed-1853907_1280.jpg"
+                                        class="card-img-top" alt="Flight Booking">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Flight Booking</h5>
+                                        <p class="card-text">Book flights to your dream destinations with ease and at
+                                            the best prices.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card service-card">
+                                    <img src="https://cdn.pixabay.com/photo/2019/03/13/17/29/young-man-4053324_1280.jpg"
+                                        class="card-img-top" alt="Hotel Reservations">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hotel Reservations</h5>
+                                        <p class="card-text">Stay in comfort at the finest hotels around the world with
+                                            our exclusive deals.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card service-card">
+                                    <img src="https://cdn.pixabay.com/photo/2023/07/25/10/21/girl-8148749_1280.jpg"
+                                        class="card-img-top" alt="Tour Packages">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tour Packages</h5>
+                                        <p class="card-text">Explore curated tour packages tailored to your travel style
+                                            and preferences.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card service-card">
+                                    <img src="https://cdn.pixabay.com/photo/2023/03/16/16/20/little-girl-7857049_1280.jpg"
+                                        class="card-img-top" alt="Cruise Booking">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cruise Booking</h5>
+                                        <p class="card-text">Experience the luxury of the open seas with our premium
+                                            cruise packages.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card service-card">
+                                    <img src="https://cdn.pixabay.com/photo/2016/11/15/16/12/student-1826700_1280.jpg"
+                                        class="card-img-top" alt="Adventure Tours">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Adventure Tours</h5>
+                                        <p class="card-text">Unleash your inner adventurer with thrilling outdoor tours.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card service-card">
+                                    <img src="https://cdn.pixabay.com/photo/2017/05/24/08/10/model-2339867_1280.jpg"
+                                        class="card-img-top" alt="Car Rentals">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Car Rentals</h5>
+                                        <p class="card-text">Get around with ease by booking rental cars in various
+                                            destinations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- our courses section -->
+    <section id="services justify-content-center" class="py-5">
+        <div class="container text-center justify-content-center" id="courses">
+            <h2 class="mb-5">Our Courses</h2>
+
+            <!-- Carousel -->
+            <div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class=" carousel-item active">
+                        <div class="row">
+                            <div class=" col-md-4 ">
+                                <div class="card service-card">
+                                    <img src="https://cdn.pixabay.com/photo/2020/03/05/16/58/hospital-4904920_1280.jpg"
+                                        class="card-img-top" alt="Flight Booking">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Diploma in Operation Theatre Technology</h5>
+                                        <p class="card-text">Gain comprehensive knowledge and skills required for
+                                            assisting in Operation Theatres</p>
+                                            <button class="btn">Learn More</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card service-card">
+                                    <img src="https://cdn.pixabay.com/photo/2021/02/03/23/09/operating-room-5979687_1280.jpg"
+                                        class="card-img-top" alt="Hotel Reservations">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Diploma in X-Ray
+                                            Technology</h5>
+                                        <p class="card-text">Learn to operate X-Ray machines and understand imaging
+                                            techniques for accurate diagnostics.</p>
+                                            <button class="btn">Learn More</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card service-card">
+                                    <img src="https://cdn.pixabay.com/photo/2023/07/25/10/21/girl-8148749_1280.jpg"
+                                        class="card-img-top" alt="Tour Packages">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tour Packages</h5>
+                                        <p class="card-text">Explore curated tour packages tailored to your travel style
+                                            and preferences.</p>
+                                            <button class="btn">Learn More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div>
+    </section>
+
+    <!-- container -->
+    <div class="container py-4">
+        <h2 class="text-center mb-2">Career Scope</h2>
+        <p class="text-center m-3 careerpara">Explore the diverse and rewarding career opportunities available <br> after completing our
+            programs. Our graduates are equipped with the skills <br> and knowledge needed to excel in various healthcare
+            fields, ensuring a bright and fulfilling career path.</p>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <!-- Lab Technician -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://psinps.in/assets/images/career/nurse1.jpg" class="card-img-top"
+                        alt="Lab Technician">
+                    <div class="card-body">
+                        <h5 class="card-title">Lab Technician</h5>
+                        <p class="card-text">Lab technicians are essential in the medical field, conducting tests and
+                            research that help in the diagnosis and treatment of diseases.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pharmacist -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://psinps.in/assets/images/career/nurse1.jpg" class="card-img-top" alt="Pharmacist">
+                    <div class="card-body">
+                        <h5 class="card-title">Pharmacist</h5>
+                        <p class="card-text">Pharmacists are integral to healthcare teams, ensuring patients receive the
+                            correct medications and providing guidance on their safe use.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Physiotherapist -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://psinps.in/assets/images/career/radio.jpg" class="card-img-top"
+                        alt="Physiotherapist">
+                    <div class="card-body">
+                        <h5 class="card-title">Physiotherapist</h5>
+                        <p class="card-text">Physiotherapists help patients recover from injuries and improve their
+                            physical function through tailored therapy and rehabilitation programs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nurse -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://psinps.in/assets/images/career/midwi.jpg" class="card-img-top" alt="Nurse">
+                    <div class="card-body">
+                        <h5 class="card-title">Nurse</h5>
+                        <p class="card-text">With a nursing degree, you'll have opportunities to work in hospitals,
+                            clinics, and other healthcare facilities, providing critical care and support to patients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Radiologist -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://psinps.in/assets/images/career/physio.jpg" class="card-img-top" alt="Radiologist">
+                    <div class="card-body">
+                        <h5 class="card-title">Radiologist</h5>
+                        <p class="card-text">As a radiologist, you'll work in diagnostic imaging centers and hospitals,
+                            using advanced imaging technology to help diagnose and treat medical conditions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Midwife -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://psinps.in/assets/images/career/pharm.jpg" class="card-img-top" alt="Midwife">
+                    <div class="card-body">
+                        <h5 class="card-title">Midwife</h5>
+                        <p class="card-text">Midwives play a vital role in maternity care, assisting with childbirth and
+                            providing support to mothers and newborns during this critical time.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid">
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-white py-3">
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold">Prateek Singh Institute Of Nursing & Paramedical Sciences
+                            </h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>+91-9415327400</p>
+                            <span>psnpsdn@gmail.com</span>
+                            <span>Vill- Karaunda-Masina,P.O - Deora Bazar, Dist- SidhharthNagar(U.P)</span>
+                        </div>
+                        <!-- Grid column -->
+
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 mt-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Campus Life</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="#!" class="text-white">About Us</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Courses</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">SCareer Scope</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Useful Links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p><i class="fas fa-home mr-3"></i> Acedemic</p>
+                            <p><i class="fas fa-envelope mr-3"></i> Contact Us</p>
+                            <p><i class="fas fa-phone mr-3"></i> Home</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+    </div>
+    <!-- bootstrap stript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- script -->
+    <script src="index.js"></script>
+
+
+</body>

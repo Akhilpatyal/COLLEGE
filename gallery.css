@@ -1,0 +1,37 @@
+.navbar{
+    position: sticky;
+}
+
+.gnav{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background: none;
+   
+    
+}
+.navitems{
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.jumbotron {
+	color: #2b3d34;
+	background: #a7aba9;
+    line-height: 70px;
+    padding-left: 27px;
+    padding-top: 10px   ;
+}
+.jumbotron p{
+
+    font-weight: 600;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer{
+    background-color: #3a349e;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+   }
