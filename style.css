@@ -1,58 +1,79 @@
-*{
-    margin: 0;padding: 0;box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
   width: 100%;
   height: 100%;
 }
-/* .navbar-nav{
-    margin-left: 150px;
-} */
-.intro{
-   line-height: 1rem;
-   border-radius: 20px;
-   background: rgb(251 226 226 / 25%);
-   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-   backdrop-filter: blur( 4px );
-   -webkit-backdrop-filter: blur( 4px );
-   border-radius: 10px;
-   border: 1px solid rgba( 255, 255, 255, 0.18 );
-    
-} 
-.navbar{
+
+.intro {
+  line-height: 1rem;
+  background: rgb(251 226 226 / 25%);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+}
+
+.intro ul li a {
+  color: #ffffff;
+  border: none;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.intro ul li a:hover {
+  background: #dfdfdf;
+  color: #495056;
+}
+
+.navbar {
   font-weight: 600;
   font-size: 1.2rem;
   box-shadow: rgba(50, 50, 93, 0.1) 0px 50px 100px -30px, rgba(0, 0, 0, 0.1) 0px 30px 60px -30px;
 }
 
-.form{
-   
-    border-radius: 10px;
+.nav-item {
+  padding-left: 6px;
 }
-#contactForm ul{
-    text-decoration: none;
-    list-style: none;
+
+#contactForm ul {
+  text-decoration: none;
+  list-style: none;
 }
-#contactForm{
-    text-decoration: none;
-    list-style: none;
+
+#contactForm {
+  text-decoration: none;
+  list-style: none;
 }
 
 
 
 /* form */
 
-.form-holder {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
-   
+.form {
+
+  border-radius: 10px;
 }
-.form-items{
-    background-color: rgb(174, 170, 170);
+
+.form-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+
+}
+
+.form-items {
+  background-color: rgb(174, 170, 170);
 }
 
 .form-holder .form-content {
@@ -106,11 +127,16 @@ html,body{
 }
 
 
-.form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+.form-content label,
+.was-validated .form-check-input:invalid~.form-check-label,
+.was-validated .form-check-input:valid~.form-check-label {
   color: #fff;
 }
 
-.form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content select {
+.form-content input[type=text],
+.form-content input[type=password],
+.form-content input[type=email],
+.form-content select {
   width: 100%;
   padding: 9px 20px;
   text-align: left;
@@ -127,18 +153,20 @@ html,body{
 }
 
 
-.btn-primary{
+.btn-primary {
   background-color: #6C757D;
   outline: none;
   border: 0px;
-   box-shadow: none;
+  box-shadow: none;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
   background-color: #495056;
   outline: none !important;
   border: none !important;
-   box-shadow: none;
+  box-shadow: none;
 }
 
 .form-content textarea {
@@ -160,64 +188,65 @@ html,body{
   margin-bottom: 14px;
 }
 
-.form-content textarea:hover, .form-content textarea:focus {
+.form-content textarea:hover,
+.form-content textarea:focus {
   border: 0;
   background-color: #ebeff8;
   color: #8D8D8D;
 }
 
-.mv-up{
+.mv-up {
   margin-top: -9px !important;
   margin-bottom: 8px !important;
 }
 
-.invalid-feedback{
+.invalid-feedback {
   color: #ff606e;
 }
 
-.valid-feedback{
- color: #2acc80;
+.valid-feedback {
+  color: #2acc80;
 }
 
 
 
 
 
-#carouselExampleSlidesOnly{
-    z-index: 0;
-    height: 80vh;
+#carouselExampleSlidesOnly {
+  z-index: 0;
+  height: 80vh;
 }
-#carouselExampleSlidesOnly img{
-    height: 90vh;
+
+#carouselExampleSlidesOnly img {
+  height: 90vh;
 }
-.heading{
-    position: absolute;
-    z-index: 1;
-}
-.navbar{
-    z-index: 20;
+
+.heading {
+  position: absolute;
+  z-index: 1;
 }
 
 /* banner */
-.banner-content ul{
+.banner-content ul {
   display: flex;
   align-items: center;
   text-decoration: none;
   list-style: none;
 }
-.banner-content ul a{
-    color: #ebeff8;
-    text-decoration: none;
-    border: 1px solid black;
-    margin-left: 1rem;
-    padding: 5px;
-    border-radius: 10px;
+
+.banner-content ul a {
+  color: #ebeff8;
+  text-decoration: none;
+  border: 1px solid black;
+  margin-left: 1rem;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 
 
 /* our courses */
-.course-card a{
+.course-card a {
   border: none;
   border-radius: 29px;
   color: #fff;
@@ -227,87 +256,188 @@ html,body{
   background-color: blue;
 }
 
-footer{
- background-color: #3a349e;
- border-top-left-radius: 30px;
- border-top-right-radius: 30px;
+footer {
+  background-color: #3a349e;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
-.card .btn{
+.card .btn {
   align-items: center;
-border: 1px solid blue;
-background-color: #3a349e;
-color: #fff;
-display: inline-block;
-width: 50%;
-font-weight: 600;
+  border: 1px solid blue;
+  background-color: #3a349e;
+  color: #fff;
+  display: inline-block;
+  width: 50%;
+  font-weight: 600;
 }
-.card{
-  border:none !important;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px!important;
+
+.card {
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px !important;
 }
-.card img{
+
+.card img {
   /* border: 1px solid black !important; */
   border-radius: 10px !important;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.careerpara{
+.careerpara {
   text-align: center;
   font-weight: 400;
 }
-#service{
+
+#service {
   background-color: #dfdfdf;
 }
 
+.intro {
+  margin-top: 30px;
+}
 
-/* media screen */
-@media  screen and (min-width:500px)and (max-width: 1100px) {
-  #carouselExampleSlidesOnly img{
-    width: 100%;
-  }
-  .heading{
-    display: none;
-  }
-}
-@media  screen and (max-width:500px) {
-  #carouselExampleSlidesOnly img{
-    width: 100%;
-  }
-  .heading{
-    display: none;
-  }
-  .footer{
-    width: 100%;
-  }
-}
 
 
 /* about section */
-.heading1{
+.heading1 {
   font-weight: 500;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.aboutContainer img{
+.aboutContainer img {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.4) 0px 30px 60px -30px;
 }
 
 /* courses testimonial */
-.card{
-    
-  border:none;
+.card {
+
+  border: none;
 }
 
-.user-content p{
-  margin-top:5px;
-  font-size:12px;
-}
-
-
-.ratings i{
-  color:blue;
+.user-content p {
+  margin-top: 5px;
+  font-size: 12px;
 }
 
 
+.ratings i {
+  color: blue;
+}
+
+
+
+/* extra */
+
+
+.gnav {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background: none;
+
+
+}
+
+.navitems {
+  font-weight: 600;
+}
+
+.jumbotron {
+  text-align: center;
+  color: #2b3d34;
+  line-height: 70px;
+  margin: 20px;
+}
+
+.jumbotron h1 {
+  text-align: center;
+  color: #2b3d34;
+  line-height: 70px;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  background-color: #3a349e;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+
+
+
+/* @media (max-width: 991.98px) {
+  /* Adjust banner content width */
+.banner-content {
+  text-align: center;
+  width: 100%;
+}
+
+/* Move form below banner content */
+.form {
+  margin-top: 20px;
+}
+
+/* Ensure that both banner and form remain above carousel */
+#carouselExampleSlidesOnly {
+  margin-top: 30px;
+}
+
+*/
+
+/* new */
+.bgbgtt{
+  background-image: url('https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  /* animation: changeBackground infinite 5s ease-in-out; */
+  background-color: red;
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url('https://psinps.in/assets/images/banners/banner-3.webp');
+
+  }
+
+  33% {
+    background-image: url('https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  }
+
+  66% {
+    background-image: url('https://images.pexels.com/photos/9792417/pexels-photo-9792417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  }
+
+  100% {
+    background-image: url('https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  }
+}
+
+@media (min-width:300px) and (max-width: 1102px) {
+  .ticket-form {
+    display: inline-block;
+    top: 200px;
+    width: 70vw;
+    z-index: 0;
+
+  }
+
+  .intro {
+    width: 80vw;
+    margin-top: 80px !important;
+    padding-top: 40px;
+  }
+
+  .banner-content {
+    width: 70vw;
+  }
+}
+
+.ticket-form {
+  border-radius: 20px;
+  background-color: #3a3e3c;
+}
