@@ -9,21 +9,24 @@
     
 }
 .navitems{
-    border-radius: 20px;
     font-weight: 600;
 }
 
 .jumbotron {
+    text-align:center;
 	color: #2b3d34;
-	background: #a7aba9;
-    line-height: 70px;
-    padding-left: 27px;
-    padding-top: 10px   ;
+    line-height: 70px;  
+    margin: 20px;
 }
-.jumbotron p{
+.jumbotron h1{
+    text-align:center;
+	color: #2b3d34;
+    line-height: 70px;  
+    font-weight: 700;
+    font-size: 60px;
+}
 
-    font-weight: 600;
-}
+
 
 .flex {
     display: flex;
