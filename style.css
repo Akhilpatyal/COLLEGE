@@ -19,6 +19,7 @@ body {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
+  margin: auto;
 }
 
 .intro ul li a {
@@ -39,6 +40,7 @@ body {
   box-shadow: rgba(50, 50, 93, 0.1) 0px 50px 100px -30px, rgba(0, 0, 0, 0.1) 0px 30px 60px -30px;
 }
 
+/* nav items */
 .nav-item {
   padding-left: 6px;
 }
@@ -209,23 +211,6 @@ body {
 }
 
 
-
-
-
-#carouselExampleSlidesOnly {
-  z-index: 0;
-  height: 80vh;
-}
-
-#carouselExampleSlidesOnly img {
-  height: 90vh;
-}
-
-.heading {
-  position: absolute;
-  z-index: 1;
-}
-
 /* banner */
 .banner-content ul {
   display: flex;
@@ -293,9 +278,7 @@ footer {
   background-color: #dfdfdf;
 }
 
-.intro {
-  margin-top: 30px;
-}
+
 
 
 
@@ -370,55 +353,31 @@ footer {
 }
 
 
-
-
-/* @media (max-width: 991.98px) {
-  /* Adjust banner content width */
-.banner-content {
-  text-align: center;
-  width: 100%;
-}
-
-/* Move form below banner content */
-.form {
-  margin-top: 20px;
-}
-
-/* Ensure that both banner and form remain above carousel */
-#carouselExampleSlidesOnly {
-  margin-top: 30px;
-}
-
-*/
-
 /* new */
-.bgbgtt{
-  background-image: url('https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  /* animation: changeBackground infinite 5s ease-in-out; */
-  background-color: red;
+
+
+
+
+@media screen and (min-width: 1060px) {
+  .book_form {
+    display: none;
+  }
+
+  .intro {
+    width: 50vw;
+  }
+
 }
 
-@keyframes changeBackground {
-  0% {
-    background-image: url('https://psinps.in/assets/images/banners/banner-3.webp');
-
-  }
-
-  33% {
-    background-image: url('https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  }
-
-  66% {
-    background-image: url('https://images.pexels.com/photos/9792417/pexels-photo-9792417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  }
-
-  100% {
-    background-image: url('https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+@media screen and (max-width:1060px) {
+  .forms {
+    display: none;
   }
 }
 
 @media (min-width:300px) and (max-width: 1102px) {
-  .ticket-form {
+
+  /* .ticket-form {
     display: inline-block;
     top: 200px;
     width: 70vw;
@@ -434,7 +393,7 @@ footer {
 
   .banner-content {
     width: 70vw;
-  }
+  } */
 }
 
 .ticket-form {
