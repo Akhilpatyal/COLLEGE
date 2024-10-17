@@ -361,6 +361,7 @@ footer {
 @media screen and (min-width: 1060px) {
   .book_form {
     display: none;
+    width: 80vw !important;
   }
 
   .intro {
@@ -375,28 +376,35 @@ footer {
   }
 }
 
-@media (min-width:300px) and (max-width: 1102px) {
-
-  /* .ticket-form {
-    display: inline-block;
+@media (min-width:250px) and (max-width: 1102px) {
+  .book_form {
+    width: 80vw !important;
+    transform: translate(4%, 8%) !important;
+  }
+   .ticket-forms {
     top: 200px;
-    width: 70vw;
-    z-index: 0;
+    width: 40vw !important;
+    margin: auto;
 
   }
+}
 
-  .intro {
-    width: 80vw;
-    margin-top: 80px !important;
-    padding-top: 40px;
+@media (min-width:250px) and (max-width: 650px) {
+
+   .ticket-forms {
+    top: 200px;
+    width: 80vw !important;
+    margin: auto;
+
   }
-
-  .banner-content {
-    width: 70vw;
-  } */
 }
 
 .ticket-form {
   border-radius: 20px;
   background-color: #3a3e3c;
+}
+.ticket-forms {
+  border-radius: 20px;
+  background-color: #3a3e3c;
+  width: 30vw;
 }
