@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical Institute</title>
-    <link rel="icon" href=
-    "https://www.citypng.com/public/uploads/preview/web-page-internet-network-black-icon-png-701751694974337ex5b3n87cj.png"
-            type="image/x-icon" />
+    <link rel="icon"
+        href="https://www.citypng.com/public/uploads/preview/web-page-internet-network-black-icon-png-701751694974337ex5b3n87cj.png"
+        type="image/x-icon" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -16,34 +16,39 @@
 </head>
 
 <style>
-    #bgimg{
+    #bgimg {
         height: 90vh !important;
-  background-image: url('https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  animation: changeBackground infinite 5s ;
+        background-image: url('https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        animation: changeBg 10s infinite;
     }
-    .book_form{
-        transform: translate(10%,10%);
+
+    .book_form {
+        transform: translate(10%, 10%);
         width: 44vw;
     }
 
-    @keyframes changeBackground {
-  0% {
-    background-image: url('https://psinps.in/assets/images/banners/banner-3.webp');
+    @keyframes changeBg {
+        0% {
+            background-image: url('https://psinps.in/assets/images/banners/banner-3.webp');
+            filter: blur(0);
 
-  }
+        }
 
-  33% {
-    background-image: url('https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  }
+        33% {
+            background-image: url('https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            filter: blur(10);
+        }
 
-  66% {
-    background-image: url('https://images.pexels.com/photos/9792417/pexels-photo-9792417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  }
+        66% {
+            background-image: url('https://images.pexels.com/photos/9792417/pexels-photo-9792417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            filter: blur(3);
+        }
 
-  100% {
-    background-image: url('https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  }
-}
+        100% {
+            background-image: url('https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            filter: blur(0);
+        }
+    }
 </style>
 
 <body>
@@ -83,115 +88,116 @@
         </div>
     </nav>
     <!-- navbar end -->
-     <div class="container-fluid p-0" id="bgimg">
-         <div class="container-fluid align-items-center m-0" >
-             <div class="row g-4 align-items-center mt-1">
-     
-                 <!-- content -->
-                 <div class="col-12 col-lg-6 intro">
-                     <div class="banner-content banner-content-two">
-                         <h1>Welcome To Prateek Singh Institute Of Nursing &amp; Paramedical Sciences</h1>
-                         <p>Committed to excellence in Nursing and Paramedical education, fostering future healthcare
-                             professionals.</p>
-                         <ul>
-                             <li>
-                                 <a href="#courses" class="default-btn-one">
-                                     <i class="flaticon-bookmark"></i>Explore Courses
-                                 </a>
-                             </li>
-                             <li>
-                                 <a href="#contact" class="default-btn-two">
-                                     <i class="flaticon-speech-bubble"></i>Contact Us
-                                 </a>
-                             </li>
-                         </ul>
-                     </div>
-                 </div>
-                 <!-- content -->
-     
-                 <div class="col-xl-5" >
-                     <div class="ticket-form forms p-4">
-                         <h2 class="text-light text-uppercase mb-3">book your Courses</h2>
-                         <form>
-                             <div class="row g-4">
-                                 <div class="col-12">
-                                     <input type="text" class="form-control border-0 py-2" id="name" placeholder="Your Name">
-                                 </div>
-                                 <div class="col-12 col-xl-6">
-                                     <input type="email" class="form-control border-0 py-2" id="email"
-                                         placeholder="Your Email">
-                                 </div>
-                                 <div class="col-12 col-xl-6">
-                                     <input type="phone" class="form-control border-0 py-2" id="phone" placeholder="Phone">
-                                 </div>
-                                 <div class="col-12">
-                                     <select class="form-select border-0 py-2" aria-label="Default select example">
-                                         <option selected="">Select course</option>
-                                         <option value="1">Software Development</option>
-                                         <option value="2">FrontEnd Development/option>
-                                         <option value="3">BackEnd Development</option>
-                                         <option value="4">Fullstack Development</option>
-                                         <option value="5">Nursing</option>
-                                         <option value="6">Designing</option>
-                                     </select>
-                                 </div>
-                                 <div class="col-12">
-                                     <input class="form-control border-0 py-2" type="date">
-                                 </div>
-                                 <div class="col-12">
-                                     <button type="button" class="btn btn-primary w-100 py-2 px-5">Apply Now</button>
-                                 </div>
-                             </div>
-                         </form>
-                     </div>
-                 </div>
-             </div>
-         </div>
+    <div class="container-fluid" id="bgimg">
+        <div class="container-fluid align-items-center" style="padding-top: 10vh;">
+            <div class="row g-4 align-items-center ">
 
-     </div>
+                <!-- content -->
+                <div class="col-12 col-lg-6 intro">
+                    <div class="banner-content banner-content-two p-3 pt-4">
+                        <h1>Welcome To Prateek Singh Institute Of Nursing &amp; Paramedical Sciences</h1>
+                        <p>Committed to excellence in Nursing and Paramedical education, fostering future healthcare
+                            professionals.</p>
+                        <ul class="p-3">
+                            <li>
+                                <a href="#courses" class="default-btn-one">
+                                    <i class="flaticon-bookmark"></i>Explore Courses
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="default-btn-two">
+                                    <i class="flaticon-speech-bubble"></i>Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- content -->
+
+                <div class="col-xl-5">
+                    <div class="ticket-form forms p-4">
+                        <h2 class="text-light text-uppercase mb-3">book your Courses</h2>
+                        <form>
+                            <div class="row g-4">
+                                <div class="col-12">
+                                    <input type="text" class="form-control border-0 py-2" id="name"
+                                        placeholder="Your Name">
+                                </div>
+                                <div class="col-12 col-xl-6">
+                                    <input type="email" class="form-control border-0 py-2" id="email"
+                                        placeholder="Your Email">
+                                </div>
+                                <div class="col-12 col-xl-6">
+                                    <input type="phone" class="form-control border-0 py-2" id="phone"
+                                        placeholder="Phone">
+                                </div>
+                                <div class="col-12">
+                                    <select class="form-select border-0 py-2" aria-label="Default select example">
+                                        <option selected="">Select course</option>
+                                        <option value="1">Software Development</option>
+                                        <option value="2">FrontEnd Development/option>
+                                        <option value="3">BackEnd Development</option>
+                                        <option value="4">Fullstack Development</option>
+                                        <option value="5">Nursing</option>
+                                        <option value="6">Designing</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <input class="form-control border-0 py-2" type="date">
+                                </div>
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-primary w-100 py-2 px-5">Apply Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
-     <!-- book form -->
-      <div class="container justify-content-center mt-3 pt-1 book_form">
-          <div class="col-xl-5 text-center" >
-             <div class="ticket-form p-4">
-                 <h2 class="text-light text-uppercase mb-3">book your Courses</h2>
-                 <form>
-                     <div class="row g-4">
-                         <div class="col-12">
-                             <input type="text" class="form-control border-0 py-2" id="name" placeholder="Your Name">
-                         </div>
-                         <div class="col-12 col-xl-6">
-                             <input type="email" class="form-control border-0 py-2" id="email"
-                                 placeholder="Your Email">
-                         </div>
-                         <div class="col-12 col-xl-6">
-                             <input type="phone" class="form-control border-0 py-2" id="phone" placeholder="Phone">
-                         </div>
-                         <div class="col-12">
-                             <select class="form-select border-0 py-2" aria-label="Default select example">
-                                 <option selected="">Select course</option>
-                                 <option value="1">Software Development</option>
-                                 <option value="2">FrontEnd Development/option>
-                                 <option value="3">BackEnd Development</option>
-                                 <option value="4">Fullstack Development</option>
-                                 <option value="5">Nursing</option>
-                                 <option value="6">Designing</option>
-                             </select>
-                         </div>
-                         <div class="col-12">
-                             <input class="form-control border-0 py-2" type="date">
-                         </div>
-                         <div class="col-12">
-                             <button type="button" class="btn btn-primary w-100 py-2 px-5">Apply Now</button>
-                         </div>
-                     </div>
-                 </form>
-             </div>
-         </div>
+    <!-- book form -->
+    <div class="container justify-content-center mt-3 pt-1 book_form">
+        <div class="col-xl-5 text-center">
+            <div class="ticket-form p-4">
+                <h2 class="text-light text-uppercase mb-3">book your Courses</h2>
+                <form>
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <input type="text" class="form-control border-0 py-2" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="col-12 col-xl-6">
+                            <input type="email" class="form-control border-0 py-2" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="col-12 col-xl-6">
+                            <input type="phone" class="form-control border-0 py-2" id="phone" placeholder="Phone">
+                        </div>
+                        <div class="col-12">
+                            <select class="form-select border-0 py-2" aria-label="Default select example">
+                                <option selected="">Select course</option>
+                                <option value="1">Software Development</option>
+                                <option value="2">FrontEnd Development/option>
+                                <option value="3">BackEnd Development</option>
+                                <option value="4">Fullstack Development</option>
+                                <option value="5">Nursing</option>
+                                <option value="6">Designing</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <input class="form-control border-0 py-2" type="date">
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="btn btn-primary w-100 py-2 px-5">Apply Now</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
 
-      </div>
-     <!-- book form end -->
+    </div>
+    <!-- book form end -->
 
 
     <!-- about section -->
@@ -344,38 +350,35 @@
     </section>
 
 
+
     <!-- our courses section -->
     <section id="services justify-content-center" class="py-5">
         <div class="container text-center justify-content-center" id="courses">
             <h2 class="mb-5">Our Courses</h2>
-
             <!-- Carousel -->
             <div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class=" carousel-item active">
+                    <div class="carousel-item active">
                         <div class="row">
-                            <div class=" col-md-4 ">
+                            <div class="col-md-4 ">
                                 <div class="card service-card">
-                                    <img src="https://cdn.pixabay.com/photo/2020/03/05/16/58/hospital-4904920_1280.jpg"
+                                    <img src="https://images.pexels.com/photos/28309998/pexels-photo-28309998/free-photo-of-a-fighter-jet-is-parked-on-the-tarmac.jpeg?auto=compress&cs=tinysrgb&w=400"
                                         class="card-img-top" alt="Flight Booking">
                                     <div class="card-body">
-                                        <h5 class="card-title">Diploma in Operation Theatre Technology</h5>
-                                        <p class="card-text">Gain comprehensive knowledge and skills required for
-                                            assisting in Operation Theatres</p>
-                                        <button class="btn">Learn More</button>
+                                        <h5 class="card-title">Aerodynamic Engineering</h5>
+                                        <p class="card-text">Book flights to your dream destinations with ease and at
+                                            the best prices.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="card service-card">
-                                    <img src="https://cdn.pixabay.com/photo/2021/02/03/23/09/operating-room-5979687_1280.jpg"
+                                    <img src="https://images.pexels.com/photos/3770093/pexels-photo-3770093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                         class="card-img-top" alt="Hotel Reservations">
                                     <div class="card-body">
-                                        <h5 class="card-title">Diploma in X-Ray
-                                            Technology</h5>
-                                        <p class="card-text">Learn to operate X-Ray machines and understand imaging
-                                            techniques for accurate diagnostics.</p>
-                                        <button class="btn">Learn More</button>
+                                        <h5 class="card-title">Hotel management</h5>
+                                        <p class="card-text">Stay in comfort at the finest hotels around the world with
+                                            our exclusive deals.</p>
                                     </div>
                                 </div>
                             </div>
@@ -387,7 +390,44 @@
                                         <h5 class="card-title">Tour Packages</h5>
                                         <p class="card-text">Explore curated tour packages tailored to your travel style
                                             and preferences.</p>
-                                        <button class="btn">Learn More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card service-card">
+                                    <img src="https://cdn.pixabay.com/photo/2023/03/16/16/20/little-girl-7857049_1280.jpg"
+                                        class="card-img-top" alt="Cruise Booking">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Civil Engineering</h5>
+                                        <p class="card-text">Experience the luxury of the open seas with our premium
+                                            cruise packages.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card service-card">
+                                    <img src="https://cdn.pixabay.com/photo/2016/11/15/16/12/student-1826700_1280.jpg"
+                                        class="card-img-top" alt="Adventure Tours">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Adventure Tours</h5>
+                                        <p class="card-text">Unleash your inner adventurer with thrilling outdoor tours.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card service-card">
+                                    <img src="https://cdn.pixabay.com/photo/2017/05/24/08/10/model-2339867_1280.jpg"
+                                        class="card-img-top" alt="Car Rentals">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Car Rentals</h5>
+                                        <p class="card-text">Get around with ease by booking rental cars in various
+                                            destinations.</p>
                                     </div>
                                 </div>
                             </div>
@@ -395,9 +435,12 @@
                     </div>
                 </div>
             </div>
+
         </div>
-        </div>
-    </section>
+    </div>
+</section>
+        
+
 
     <!-- container -->
     <div class="container py-4">
@@ -565,44 +608,46 @@
     <!-- Contact Modal -->
     <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
         <!-- form -->
-        <div class=" modal-dialog container justify-content-center mt-3 pt-1">
-            <div class="col-xl-5 text-center" >
-               <div class="ticket-forms p-4">
-                   <h2 class="text-light text-uppercase mb-3">book your Courses</h2>
-                   <form>
-                       <div class="row g-4">
-                           <div class="col-12">
-                               <input type="text" class="form-control border-0 py-2" id="name" placeholder="Your Name">
-                           </div>
-                           <div class="col-12 col-xl-6">
-                               <input type="email" class="form-control border-0 py-2" id="email"
-                                   placeholder="Your Email">
-                           </div>
-                           <div class="col-12 col-xl-6">
-                               <input type="phone" class="form-control border-0 py-2" id="phone" placeholder="Phone">
-                           </div>
-                           <div class="col-12">
-                               <select class="form-select border-0 py-2" aria-label="Default select example">
-                                   <option selected="">Select course</option>
-                                   <option value="1">Software Development</option>
-                                   <option value="2">FrontEnd Development/option>
-                                   <option value="3">BackEnd Development</option>
-                                   <option value="4">Fullstack Development</option>
-                                   <option value="5">Nursing</option>
-                                   <option value="6">Designing</option>
-                               </select>
-                           </div>
-                           <div class="col-12">
-                               <input class="form-control border-0 py-2" type="date">
-                           </div>
-                           <div class="col-12">
-                               <button type="button" class="btn btn-primary w-100 py-2 px-5">Apply Now</button>
-                           </div>
-                       </div>
-                   </form>
-               </div>
-           </div>
-  
+        <div class="modal-dialog">
+            <div class=" container justify-content-center mt-3 pt-1">
+                <div class="col-xl-5 text-center">
+                    <div class="ticket-forms p-4">
+                        <h2 class="text-light text-uppercase mb-3">book your Courses</h2>
+                        <form>
+                            <div class="row g-4">
+                                <div class="col-12">
+                                    <input type="text" class="form-control border-0 py-2" id="name" placeholder="Your Name">
+                                </div>
+                                <div class="col-12 col-xl-6">
+                                    <input type="email" class="form-control border-0 py-2" id="email"
+                                        placeholder="Your Email">
+                                </div>
+                                <div class="col-12 col-xl-6">
+                                    <input type="phone" class="form-control border-0 py-2" id="phone" placeholder="Phone">
+                                </div>
+                                <div class="col-12">
+                                    <select class="form-select border-0 py-2" aria-label="Default select example">
+                                        <option selected="">Select course</option>
+                                        <option value="1">Software Development</option>
+                                        <option value="2">FrontEnd Development/option>
+                                        <option value="3">BackEnd Development</option>
+                                        <option value="4">Fullstack Development</option>
+                                        <option value="5">Nursing</option>
+                                        <option value="6">Designing</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <input class="form-control border-0 py-2" type="date">
+                                </div>
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-primary w-100 py-2 px-5">Apply Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    
+            </div>
         </div>
 
         <!-- <div class="modal-dialog">
@@ -666,7 +711,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- script -->
-    <script src="index.js"></script>
 
 
 </body>

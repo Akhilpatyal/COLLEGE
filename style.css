@@ -27,12 +27,17 @@ body {
   border: none;
   margin: 0.5rem;
   padding: 0.5rem;
+  font-size: large;
+  font-weight: 600;
+  background-color: black;
+  opacity: 0.8;
+}
+.intro ul li a:hover {
+  background-color: white;
+  color: black;
 }
 
-.intro ul li a:hover {
-  background: #dfdfdf;
-  color: #495056;
-}
+
 
 .navbar {
   font-weight: 600;
@@ -353,6 +358,22 @@ footer {
 }
 
 
+.ticket-form {
+  border-radius: 20px;
+  background-color: #3a3e3c;
+}
+.ticket-forms {
+  border-radius: 20px;
+  background-color: #3a3e3c;
+  width: 30vw;
+  z-index: 20;
+}
+
+
+.intro .forms{
+  padding: 80vh;
+}
+
 /* new */
 
 
@@ -364,15 +385,62 @@ footer {
     width: 80vw !important;
   }
 
-  .intro {
-    width: 50vw;
-  }
-
 }
 
 @media screen and (max-width:1060px) {
   .forms {
     display: none;
+  }
+}
+@media (min-width:587px) and (max-width:1200px) {
+  .intro {
+    width: 70vw;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+  }
+  .intro h1{
+    font-size: 20px;
+  }
+  .intro p{
+    font-size: 12px;
+  }
+  .intro ul li a{
+    font-size: 12px;
+    margin: 0.4rem;
+    padding: 0.4rem;
+    font-size:small;
+    font-weight: 400;
+  }
+  .intro ul{
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+}
+@media (min-width:300px) and (max-width:587px){
+  .intro {
+    width: 90vw;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+  }
+  .intro h1{
+    font-size: 20px;
+  }
+  .intro p{
+    font-size: 12px;
+  }
+  .intro ul li a{
+    font-size: 12px;
+    margin: 0.4rem;
+    padding: 0.4rem;
+    font-size:small;
+    font-weight: 400;
+  }
+  .intro ul{
+    margin: 0rem;
+    padding: 0rem;
   }
 }
 
@@ -397,14 +465,4 @@ footer {
     margin: auto;
 
   }
-}
-
-.ticket-form {
-  border-radius: 20px;
-  background-color: #3a3e3c;
-}
-.ticket-forms {
-  border-radius: 20px;
-  background-color: #3a3e3c;
-  width: 30vw;
 }
